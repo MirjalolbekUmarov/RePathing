@@ -37,4 +37,4 @@ class Modify:
                 else:
                     output_dict[new_key] = value
             return output_dict
-        return [path(x, y) for x, y in re_dict(self.urls)]
+        return [path(x, y) for x, y in re_dict(self.urls).items()]
