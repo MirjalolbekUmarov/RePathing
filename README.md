@@ -9,6 +9,10 @@ Parameters:
 Returns:
 `list`: The modified list of Django urls for `urlpatterns`
 
+Importing module
+
+`from repathing import Modify`
+
 Example:
 ```
 # Define your initial urlpatterns
@@ -20,6 +24,3 @@ urlpatterns = [
 # Use the Modify class to modify urlpatterns
 urlpatterns = Modify({'home/': {"": Home, "<int:pk>/": Post}}).done()
 ```
-Importing module
-
-`from repathing import Modify`
