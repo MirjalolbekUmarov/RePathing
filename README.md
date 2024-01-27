@@ -20,3 +20,5 @@ urlpatterns = [
 # Use the Modify class to modify urlpatterns
 urlpatterns = Modify({'home/': {"": Home, "<int:pk>/": Post}}).done()
 ```
+Importing module
+from repathing import Modify
