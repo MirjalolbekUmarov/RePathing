@@ -21,4 +21,4 @@ urlpatterns = [
 urlpatterns = Modify({'home/': {"": Home, "<int:pk>/": Post}}).done()
 ```
 Importing module
-from repathing import Modify
+`from repathing import Modify`
